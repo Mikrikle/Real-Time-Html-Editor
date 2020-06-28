@@ -28,12 +28,15 @@
         }
 
         #editor-textarea {
+            background:#EAEAEA;
             width: 100%;
             height: 95%;
             margin: 10px;
             padding: 5px;
             resize: none;
         }
+
+
     </style>
 </head>
 
@@ -45,6 +48,7 @@
 
     <script>
         "use strict";
+
         function refresh() {
             let TextContent = document.getElementById("editor-textarea").value;
             document.getElementById("viever").srcdoc = TextContent;
